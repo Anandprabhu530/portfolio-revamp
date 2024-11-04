@@ -1,17 +1,7 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+import type {Metadata} from "next";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Sidebar from "./components/Sidebar";
+import Trending from "./components/Trending";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +15,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="w-[80%] mx-auto border-2 border-white min-h-screen">
+        <div className="flex border-2 border-yellow-300">
+          <div className="basis-1/4 border-2 border-red-500">
+            <Sidebar />
+          </div>
+          <div className="basis-2/4">{children}</div>
+          <div className="basis-1/4 border-2 border-green-500 h-full">
+            <Trending />
+          </div>
+        </div>
       </body>
     </html>
   );
