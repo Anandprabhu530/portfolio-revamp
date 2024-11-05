@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Trending = () => {
   return (
-    <div className="min-h-screen p-4">
-      <div className="px-4 pt-4 pb-2 border-2 border-white rounded-xl">
+    <div className="h-[300px] lg:min-h-screen md:min-h-screen p-4">
+      <div className="px-4 pt-4 pb-2 border border-neutral-700 rounded-xl">
         <div className="text-xl font-semibold pb-4">Socials</div>
         <div className="flex justify-between w-full my-4">
           <div>X</div>

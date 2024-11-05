@@ -1,31 +1,92 @@
+"use client";
+import {useState} from "react";
 import {skills} from "./constant";
+import Image from "next/image";
 
 export default function Home() {
+  const [toggle, setToggle] = useState(false);
   return (
-    <div className="border-2 border-red-500">
-      <div className="flex w-full border-b border-neutral-400 items-center justify-center p-4 text-xl font-semibold">
+    <div>
+      <div className="flex w-full border-b border-neutral-700 items-center justify-center p-4 text-xl font-semibold">
         Portfolio
       </div>
-      <div className="p-2 border-2 border-yellow-400 flex">
+      <div className="p-4 flex border-b border-neutral-700">
         <div className="flex gap-2 pr-2">
-          <div className="h-[40px] w-[40px] rounded-full border-2 border-white"></div>
+          <div className="h-[40px] w-[40px] rounded-full">
+            <Image
+              src={"/profile.png"}
+              className="rounded-full h-full w-full"
+              width={40}
+              height={50}
+              alt="profile_image"
+            />
+          </div>
         </div>
         <div>
-          <div className="">Anand Prabhu</div>
+          <div className="flex items-center">
+            Anand Prabhu
+            <div className="pl-2 text-sm flex items-center text-neutral-400">
+              Coimbatore,TN, India
+            </div>
+          </div>
           <div className="pt-2">Hi there!</div>
+          <div className="text-neutral-100 flex gap-1 font-normal">
+            I am a Software Engineer with a Masters in Computer Science.
+          </div>
           <div className="">
             Trying out new stuff Everyday. If I&apos;m not coding, I&apos;m
             probably pedaling out somewhere...
           </div>
-          <div className="flex flex-wrap gap-4 pt-2">
-            {skills.map((skill, index) => (
-              <div
-                className={`bg-[${skill.color}] px-4 py-1 rounded-2xl `}
-                key={index}
-              >
-                {skill.name}
+
+          {!toggle && (
+            <div
+              onClick={() => setToggle(true)}
+              className="pt-2 cursor-pointer text-blue-400"
+            >
+              Show more
+            </div>
+          )}
+          <div>
+            {toggle && (
+              <div>
+                <div className="pt-2">Langauages</div>
+                <div className="flex flex-wrap gap-2 pt-1 items-center pb-4">
+                  {skills.Language.map((skill, index) => (
+                    <div
+                      className={`bg-[#3b2754] px-3 py-1 text-base rounded-lg text-[#bc92f4]`}
+                      key={index}
+                    >
+                      {skill.name}
+                    </div>
+                  ))}
+                </div>
+                <div>Frontend</div>
+                <div className="flex flex-wrap gap-2 pt-1 items-center pb-4">
+                  {skills.Frameworks.map((skill, index) => (
+                    <div
+                      className={`bg-[#275428] px-3 py-1 text-base rounded-lg text-[#92f4a4]`}
+                      key={index}
+                    >
+                      {skill.name}
+                    </div>
+                  ))}
+                </div>
+                <div>Backend</div>
+                <div className="flex flex-wrap gap-2 pt-1 items-center">
+                  {skills.Backend.map((skill, index) => (
+                    <div
+                      className={`bg-[#545227] px-3 py-1 text-base rounded-lg text-[#e2f492]`}
+                      key={index}
+                    >
+                      {skill.name}
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
+            )}
+            <div className="w-full h-full border-2 border-white p-2 mt-4 rounded-lg">
+              Video here
+            </div>
           </div>
         </div>
       </div>
