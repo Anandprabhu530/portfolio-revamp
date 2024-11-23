@@ -53,7 +53,7 @@ const Projects = () => {
                 </div>
                 <div className="w-fit border border-[#6d6d6e] mt-4 rounded-lg">
                   {project.image.length == 0 ? (
-                    <div>Image</div>
+                    <div></div>
                   ) : (
                     <Link href={project.link} target="_blank">
                       <Image

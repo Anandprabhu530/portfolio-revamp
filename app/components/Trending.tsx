@@ -36,6 +36,13 @@ const Trending = () => {
           </Link>
         </div>
       </div>
+      <Link
+        target="__blank"
+        href="https://drive.google.com/file/d/144lSu6IanD8nGuJYk9kKx38LrC_jWJai/view?usp=drive_link"
+        className="px-4 mt-6 p-4 border border-neutral-700 rounded-xl flex items-center justify-center text-lg"
+      >
+        Resume
+      </Link>
     </div>
   );
 };

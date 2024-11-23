@@ -26,7 +26,7 @@ export const projects = [
     tools: ["Next.js", "Google Cloud", "Docker", "Firebase"],
     link: "https://github.com/Anandprabhu530/vidshrink-frontend",
     icon: "",
-    image: "",
+    image: "vs.png",
   },
   {
     name: "Saas Start",

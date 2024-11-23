@@ -1,13 +1,10 @@
-"use client";
-import {useState} from "react";
 import {skills} from "./constant";
 import Image from "next/image";
 
 export default function Home() {
-  const [toggle, setToggle] = useState(false);
   return (
     <div>
-      <div className="flex w-full border-b border-neutral-700 items-center justify-center p-4 text-xl font-semibold">
+      <div className="flex w-full border-b border-neutral-700 items-center justify-center p-4 text-xl font-bold">
         Portfolio
       </div>
       <div className="p-4 flex border-b border-neutral-700">
@@ -38,54 +35,39 @@ export default function Home() {
             probably pedaling out somewhere...
           </div>
 
-          {!toggle && (
-            <div
-              onClick={() => setToggle(true)}
-              className="pt-2 cursor-pointer text-blue-400"
-            >
-              Show more
-            </div>
-          )}
           <div>
-            {toggle && (
-              <div>
-                <div className="pt-2">Langauages</div>
-                <div className="flex flex-wrap gap-2 pt-1 items-center pb-4">
-                  {skills.Language.map((skill, index) => (
-                    <div
-                      className={`bg-[#3b2754] px-3 py-1 text-base rounded-lg text-[#bc92f4]`}
-                      key={index}
-                    >
-                      {skill.name}
-                    </div>
-                  ))}
+            <div className="pt-2">Langauages</div>
+            <div className="flex flex-wrap gap-2 pt-1 items-center pb-4">
+              {skills.Language.map((skill, index) => (
+                <div
+                  className={`bg-[#3b2754] px-3 py-1 text-base rounded-lg text-[#bc92f4]`}
+                  key={index}
+                >
+                  {skill.name}
                 </div>
-                <div>Frontend</div>
-                <div className="flex flex-wrap gap-2 pt-1 items-center pb-4">
-                  {skills.Frameworks.map((skill, index) => (
-                    <div
-                      className={`bg-[#275428] px-3 py-1 text-base rounded-lg text-[#92f4a4]`}
-                      key={index}
-                    >
-                      {skill.name}
-                    </div>
-                  ))}
+              ))}
+            </div>
+            <div>Frontend</div>
+            <div className="flex flex-wrap gap-2 pt-1 items-center pb-4">
+              {skills.Frameworks.map((skill, index) => (
+                <div
+                  className={`bg-[#275428] px-3 py-1 text-base rounded-lg text-[#92f4a4]`}
+                  key={index}
+                >
+                  {skill.name}
                 </div>
-                <div>Backend</div>
-                <div className="flex flex-wrap gap-2 pt-1 items-center">
-                  {skills.Backend.map((skill, index) => (
-                    <div
-                      className={`bg-[#545227] px-3 py-1 text-base rounded-lg text-[#e2f492]`}
-                      key={index}
-                    >
-                      {skill.name}
-                    </div>
-                  ))}
+              ))}
+            </div>
+            <div>Backend</div>
+            <div className="flex flex-wrap gap-2 pt-1 items-center">
+              {skills.Backend.map((skill, index) => (
+                <div
+                  className={`bg-[#545227] px-3 py-1 text-base rounded-lg text-[#e2f492]`}
+                  key={index}
+                >
+                  {skill.name}
                 </div>
-              </div>
-            )}
-            <div className="w-full h-full border-2 border-white p-2 mt-4 rounded-lg">
-              Video here
+              ))}
             </div>
           </div>
         </div>
