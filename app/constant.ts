@@ -7,13 +7,13 @@ export const skills = {
   Frameworks: [
     {name: "React.js", color: "#ffffff"},
     {name: "Next.js", color: "#ffffff"},
-    {name: "Node.js", color: "#ffffff"},
+    {name: "Tailwind CSS", color: "#ffffff"},
   ],
   Backend: [
     {name: "Google Cloud", color: "#33a754"},
     {name: "Docker", color: "#099cec"},
     {name: "Sql", color: "#ffffff"},
-    {name: "MongoDB", color: "#33a754"},
+    {name: "Node.js", color: "#33a754"},
     {name: "Firebase", color: "#099cec"},
   ],
 };
@@ -31,7 +31,7 @@ export const projects = [
   {
     name: "Saas Start",
     description:
-      "A Boilerplate to create SAAS Applications including auth, db, stripe, mailgun",
+      "A Boilerplate to create SAAS Applications including authentication, database, stripe, mailgun",
     tools: ["Next.js", "Stirpe", "Mailgun"],
     link: "https://saasstart.netlify.app/",
     icon: "saas-icon.png",
