@@ -20,6 +20,15 @@ export const skills = {
 
 export const projects = [
   {
+    name: "BPI - Basic Payment Interface",
+    description:
+      "Developed this project in order to mimic and understand the behavior of UPI system. Through out the project, I understood how payments are generally processed in UPI with NPCI.",
+    tools: ["Next.js", "Google Cloud", "Docker", "Firebase"],
+    link: "https://github.com/Anandprabhu530/bpi-frontend",
+    icon: "",
+    image: "bpi.png",
+  },
+  {
     name: "Vids Shrink",
     description:
       "A Docker-packaged video transcoder hosted in Google cloud with Cloud Run, Pub/Sub, Buckets and Firebase functions",

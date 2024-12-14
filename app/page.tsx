@@ -26,13 +26,16 @@ export default function Home() {
               Coimbatore,TN, India
             </div>
           </div>
-          <div className="pt-2">Hi there!</div>
+          <div className="py-2">Hi there!</div>
           <div className="text-neutral-100 flex gap-1 font-normal">
-            I am a Software Engineer with a Masters in Computer Science.
+            I’m a software developer—meaning I spend most of my time staring at
+            my screen, asking why this thing doesn’t work, and then fixing it by
+            accident. My code may not be perfect, but it gets the job done…
+            eventually.
           </div>
-          <div className="">
+          <div className="pt-2">
             Trying out new stuff Everyday. If I&apos;m not coding, I&apos;m
-            probably pedaling out somewhere...
+            probably pedalling out somewhere...
           </div>
 
           <div>
