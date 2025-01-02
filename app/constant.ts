@@ -20,6 +20,22 @@ export const skills = {
 
 export const projects = [
   {
+    name: "Picorom",
+    description:
+      "Image conversion tool that switches between JPG and PNG formats. Focused on delivering fast, high-quality conversions with minimal data loss.",
+    tools: [
+      "React.js",
+      "Google Cloud",
+      "Docker",
+      "Node.js",
+      "Github Actions",
+      "kubernetes",
+    ],
+    link: "https://gcp-28-challange.web.app",
+    icon: "ss-icon.jpg",
+    image: "pic.png",
+  },
+  {
     name: "BPI - Basic Payment Interface",
     description:
       "Developed this project in order to mimic and understand the behavior of UPI system. Through out the project, I understood how payments are generally processed in UPI with NPCI.",
@@ -83,14 +99,6 @@ export const projects = [
     image: "",
   },
   {
-    name: "APOD Extension",
-    description: "An extension with NASA APOD at a new Tab in browser",
-    tools: ["javascript", "Chrome Extension"],
-    link: "https://github.com/Anandprabhu530/APOD_Extension",
-    icon: "",
-    image: "apod.png",
-  },
-  {
     name: "Wing Watch",
     description: "A social media app for bird watchers written in Golang",
     tools: ["Next.js", "Golang"],
@@ -122,5 +130,13 @@ export const more_projects = [
     tools: ["Next.js", "Google Gemini"],
     link: "https://github.com/Anandprabhu530/Weave_Board",
     icon: "",
+  },
+  {
+    name: "APOD Extension",
+    description: "An extension with NASA APOD at a new Tab in browser",
+    tools: ["javascript", "Chrome Extension"],
+    link: "https://github.com/Anandprabhu530/APOD_Extension",
+    icon: "",
+    image: "apod.png",
   },
 ];

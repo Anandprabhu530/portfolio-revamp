@@ -8,7 +8,7 @@ const Experience = () => {
       </div>
       <div className="p-4 border-b border-neutral-700 flex">
         <div className="flex gap-2 pr-2">
-          <div className="h-[40px] w-[40px] rounded-full">
+          <div className="h-[40px] w-[40px]">
             <Image
               src={"/scaleai_logo.jpeg"}
               height={50}
@@ -32,7 +32,7 @@ const Experience = () => {
       </div>
       <div className="p-4 border-b border-neutral-700 flex">
         <div className="flex gap-2 pr-2">
-          <div className="h-[40px] w-[40px] rounded-full">
+          <div className="h-[40px] w-[40px]">
             <Image src={"/bgsw.png"} height={50} width={40} alt="bgsw" />
           </div>
         </div>

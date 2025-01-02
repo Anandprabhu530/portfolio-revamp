@@ -39,7 +39,7 @@ const Projects = () => {
                 <div className="font-semibold text-lg">{project.name}</div>
                 <div className="pb-4">{project.description}</div>
                 Developed with :
-                <div className="flex gap-3 pt-1">
+                <div className="gap-3 pt-1 flex flex-wrap">
                   {project.tools.map((skill, ind) => (
                     <div
                       key={ind}
