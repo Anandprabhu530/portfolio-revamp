@@ -38,7 +38,7 @@ const Trending = () => {
       </div>
       <Link
         target="__blank"
-        href="https://drive.google.com/file/d/1hgfhc9oVkWEhfZZ5A8iFBviP55j5b_DY/view?usp=sharing"
+        href="https://drive.google.com/file/d/1M_1G0qkxryZPOK_Ub4fpsbUKE0uc8c3I/view?usp=sharing"
         className="px-4 mt-6 p-4 border border-neutral-700 rounded-xl flex items-center justify-center text-lg"
       >
         Resume

@@ -3,6 +3,7 @@ export const skills = {
     {name: "Java", color: "#c53136"},
     {name: "Javascript", color: "#f1dc4f"},
     {name: "Typescript", color: "#099cec"},
+    {name: "Sql"},
   ],
   Frameworks: [
     {name: "React.js", color: "#ffffff"},
@@ -12,9 +13,9 @@ export const skills = {
   Backend: [
     {name: "Google Cloud", color: "#33a754"},
     {name: "Docker", color: "#099cec"},
-    {name: "Sql", color: "#ffffff"},
     {name: "Node.js", color: "#33a754"},
     {name: "Firebase", color: "#099cec"},
+    {name: "Kubernetes", color: "#099cec"},
   ],
 };
 
@@ -29,11 +30,20 @@ export const projects = [
       "Docker",
       "Node.js",
       "Github Actions",
-      "kubernetes",
+      "Kubernetes",
     ],
-    link: "https://gcp-28-challange.web.app",
-    icon: "ss-icon.jpg",
+    link: "https://github.com/Anandprabhu530/Picorom",
+    icon: "",
     image: "pic.png",
+  },
+  {
+    name: "Extracto",
+    description:
+      "A Text Extraction Service from Images Using Google Cloud Vision API",
+    tools: ["React.js", "Google Cloud", "Docker", "Node.js"],
+    link: "https://github.com/Anandprabhu530/extracto",
+    icon: "",
+    image: "extracto.png",
   },
   {
     name: "BPI - Basic Payment Interface",
@@ -78,7 +88,7 @@ export const projects = [
     tools: ["React.js", "Firebase", "Google gemini"],
     link: "https://story-pulse.vercel.app/",
     icon: "",
-    image: "sp.png",
+    image: "",
   },
   {
     name: "Moodler",
@@ -87,7 +97,7 @@ export const projects = [
     tools: ["Next.js", "Google gemini"],
     link: "https://github.com/Anandprabhu530/moodler",
     icon: "",
-    image: "moodler.png",
+    image: "",
   },
   {
     name: "Agriculture Assistant",
@@ -137,6 +147,6 @@ export const more_projects = [
     tools: ["javascript", "Chrome Extension"],
     link: "https://github.com/Anandprabhu530/APOD_Extension",
     icon: "",
-    image: "apod.png",
+    image: "",
   },
 ];
